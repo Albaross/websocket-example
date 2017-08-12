@@ -19,8 +19,8 @@ export class AppComponent implements OnInit {
   private stompClient: any;
   private connected: boolean = false;
 
-  private title: string = 'app';
-  private status: string = 'not connected!';
+  private title: string = 'App';
+  private status: string = 'Not connected!';
 
   ngOnInit() {
     let socket = new SockJS('http://' + HOST + ':' + PORT + ENDPOINT);
