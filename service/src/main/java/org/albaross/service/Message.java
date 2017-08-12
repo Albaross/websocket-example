@@ -1,12 +1,12 @@
 package org.albaross.service;
 
-public class Output {
+public class Message {
 
 	private String content;
 
-	public Output() {}
+	public Message() {}
 
-	public Output(String content) {
+	public Message(String content) {
 		this.content = content;
 	}
 

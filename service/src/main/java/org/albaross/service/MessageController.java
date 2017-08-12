@@ -13,8 +13,8 @@ public class MessageController {
 
     @MessageMapping(LISTEN_TO)
     @SendTo(QUEUES + REPLY_TO)
-    public Output greeting(Input message) throws Exception {
-        return new Output("Connected to service!");
+    public Message reply(Message message) throws Exception {
+        return new Message("Connected to service!");
     }
 
 }
